@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-label="Devin Boodoo — software, systems, security">
+  <defs>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-400" y="-400" width="2000" height="1400"><feGaussianBlur stdDeviation="90"/></filter>
+    <filter id="soft" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="g" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/>
+    </filter>
+    <pattern id="grid" width="96" height="96" patternUnits="userSpaceOnUse"><path d="M96 0H0V96" fill="none" stroke="#ffffff" stroke-opacity=".06"/></pattern>
+    <radialGradient id="gm" cx="50%" cy="42%" r="55%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="gridMask"><rect width="1200" height="540" fill="url(#gm)"/></mask>
+    <radialGradient id="vig" cx="50%" cy="50%" r="72%"><stop offset=".55" stop-color="#050505" stop-opacity="0"/><stop offset="1" stop-color="#050505" stop-opacity=".95"/></radialGradient>
+    <linearGradient id="hz" x1="0" x2="1"><stop offset="0" stop-color="#ede6d6" stop-opacity="0"/><stop offset=".5" stop-color="#ede6d6" stop-opacity=".9"/><stop offset="1" stop-color="#ede6d6" stop-opacity="0"/></linearGradient>
+    <style>
+      .serif { font-family: 'Instrument Serif','Iowan Old Style','Palatino Linotype',Georgia,'Times New Roman',serif; }
+      .mono  { font-family: 'IBM Plex Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace; }
+      .b { mix-blend-mode: screen; }
+      .a { animation: da 28s ease-in-out infinite alternate; }
+      .bb { animation: db 34s ease-in-out infinite alternate; }
+      .c { animation: dc 40s ease-in-out infinite alternate; }
+      @keyframes da { to { transform: translate(-90px, 60px) scale(1.08); } }
+      @keyframes db { to { transform: translate(110px, 40px); } }
+      @keyframes dc { to { transform: translate(-120px, -30px); } }
+      .ascii { font-family: 'IBM Plex Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace; font-size: 11px; letter-spacing: 7.4px; fill: #9a9489; fill-opacity: .32; }
+      .scan { animation: scan 9s linear infinite; }
+      @keyframes scan { from { transform: translateY(-80px); } to { transform: translateY(620px); } }
+      .hx { font-family: 'IBM Plex Mono','SFMono-Regular',ui-monospace,Menlo,Consolas,'Liberation Mono',monospace; font-size: 11px; fill: #ede6d6; opacity: 0; animation: hx 10s ease-in-out infinite; }
+      @keyframes hx { 0%,100% { opacity: 0; } 8%,22% { opacity: .35; } 32% { opacity: 0; } }
+      .dot { animation: pulse 1.8s ease-in-out infinite; }
+      .d2 { animation-delay: .2s; } .d3 { animation-delay: .4s; } .d4 { animation-delay: .6s; }
+      @keyframes pulse { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+      .r { animation: rv 1.4s cubic-bezier(.16,1,.3,1) both; }
+      .r1 { animation-delay: .1s; } .r2 { animation-delay: .25s; } .r3 { animation-delay: .4s; } .r4 { animation-delay: .55s; } .r5 { animation-delay: .7s; }
+      @keyframes rv { from { opacity: 0; transform: translateY(14px); } }
+      .hzc { animation: breathe 6s ease-in-out infinite; transform-origin: 600px 470px; }
+      @keyframes breathe { 50% { opacity: .55; transform: scaleX(.9); } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="540" fill="#050505"/>
+
+  <g filter="url(#blur)">
+    <g class="a"><circle class="b" cx="1080" cy="40" r="260" fill="#ff1f2f" fill-opacity=".34"/></g>
+    <g class="bb"><circle class="b" cx="110" cy="70" r="230" fill="#5b3cff" fill-opacity=".30"/></g>
+    <g class="c"><circle class="b" cx="640" cy="620" r="220" fill="#8a2be2" fill-opacity=".24"/></g>
+  </g>
+
+  <rect width="1200" height="540" fill="url(#grid)" mask="url(#gridMask)"/>
+
+  <g class="ascii">
+      <text x="0" y="11" xml:space="preserve">   .·::;;--===+++===---;;;::··...                    .     ·::;;;;--=====--=*x%##%%%%%</text>
+      <text x="0" y="25" xml:space="preserve">   .·:::;--=======---;;::::··...                           .·::::;;---==---=+x%%%%%%%%</text>
+      <text x="0" y="39" xml:space="preserve">    .··:;;------=--;::·····....                            .·::::;;;;---;;;-=*xxxxxxxx</text>
+      <text x="0" y="53" xml:space="preserve">     ..·:;;;;;;;--;:·.........                             .·::::::::;;::::;-=+++++***</text>
+      <text x="0" y="67" xml:space="preserve">      .··:::::::;;:·.                                      .·:::::::·····.··:;-=====++</text>
+      <text x="0" y="81" xml:space="preserve">       ..···...····.                                      .··:······....   .·:;;---===</text>
+      <text x="0" y="95" xml:space="preserve">        ..........                                       ..·····...         .·::;;---=</text>
+      <text x="0" y="109" xml:space="preserve">                                                        ...····..           ..··::;;--</text>
+      <text x="0" y="123" xml:space="preserve">                                                        .......               .··::;--</text>
+      <text x="0" y="137" xml:space="preserve">                                                          .....                .··::;-</text>
+      <text x="0" y="151" xml:space="preserve">                                                                               ..·::;-</text>
+      <text x="0" y="165" xml:space="preserve">.                                                                               .·::;-</text>
+      <text x="0" y="179" xml:space="preserve">..                                                                               .·:;;</text>
+      <text x="0" y="193" xml:space="preserve">·..                                                                              .·::;</text>
+      <text x="0" y="207" xml:space="preserve">··..                                                                             .··::</text>
+      <text x="0" y="221" xml:space="preserve">:··.                                                                             ..·::</text>
+      <text x="0" y="235" xml:space="preserve">:··..                                                                            ..··:</text>
+      <text x="0" y="249" xml:space="preserve">::··..                                                                           ..··:</text>
+      <text x="0" y="263" xml:space="preserve">::··..                                                                            .··:</text>
+      <text x="0" y="277" xml:space="preserve">:::··..                                                                           ..··</text>
+      <text x="0" y="291" xml:space="preserve">::::··.                                                                           ..··</text>
+      <text x="0" y="305" xml:space="preserve">::::::·.                                                                          ..··</text>
+      <text x="0" y="319" xml:space="preserve">;;;;;:·.                                                                          .··:</text>
+      <text x="0" y="333" xml:space="preserve">;;;;;:··.                                                                        .··::</text>
+      <text x="0" y="347" xml:space="preserve">---;;:··..                                                                       .·::;</text>
+      <text x="0" y="361" xml:space="preserve">=--;;::··.                                                                      .·::;;</text>
+      <text x="0" y="375" xml:space="preserve">==-;;:::··.                                                                    ..·:;;-</text>
+      <text x="0" y="389" xml:space="preserve">==--;::::·.                                                                    .··:;--</text>
+      <text x="0" y="403" xml:space="preserve">==--;::::·.                                                                    .·:;--=</text>
+      <text x="0" y="417" xml:space="preserve">==--;:::::·                                                                    .·:;-==</text>
+      <text x="0" y="431" xml:space="preserve">==-;;:::::·.                                                                   .·;-==+</text>
+      <text x="0" y="445" xml:space="preserve">---;;:::;:·.    ...                                                      .···.··:;-=++</text>
+      <text x="0" y="459" xml:space="preserve">---;;:::::·.    ...                                             .......··:;;;;;;--==++</text>
+      <text x="0" y="473" xml:space="preserve">--;;;::···.........                                    .........·····::;;--=====+++++*</text>
+      <text x="0" y="487" xml:space="preserve">;;;;:::·...........                                   .·:::····::::;;---=+++*****++++*</text>
+      <text x="0" y="501" xml:space="preserve">;;;::::·....······..                                ..·:;;;;:::;;;--==++**xxx%%%x*+++*</text>
+      <text x="0" y="515" xml:space="preserve">;;;::::···········..                               .··:;---;;;;--==++**xx%%%##%%x*+++*</text>
+      <text x="0" y="529" xml:space="preserve">;;::::::::::······..                             ..··:;;----;--=++**xx%%%#####%%x**+**</text>
+      <text x="0" y="543" xml:space="preserve">::::;;;;;;;:::····..                            ..··:;;;;--;;--=+*xx%######%%%%x**+++*</text>
+  </g>
+  <rect class="scan" x="0" y="0" width="1200" height="1" fill="#ede6d6" fill-opacity=".07"/>
+  <text x="281" y="414" class="hx" style="animation-delay:0.0s">0x67C76FB008</text>
+    <text x="912" y="379" class="hx" style="animation-delay:1.7s">0xBEBB2737F6</text>
+    <text x="882" y="297" class="hx" style="animation-delay:3.4s">0x0FB23C6F5D</text>
+    <text x="219" y="70" class="hx" style="animation-delay:5.1s">0x255404E4F</text>
+    <text x="914" y="316" class="hx" style="animation-delay:6.8s">0x34D660</text>
+    <text x="255" y="332" class="hx" style="animation-delay:8.5s">0xA8D41BE</text>
+
+  <g text-anchor="middle">
+    <text x="600" y="214" class="mono r r1" font-size="12" letter-spacing="4" fill="#6b6558">FOCUSUCOF</text>
+    <text x="600" y="306" class="serif r r2" font-size="104" fill="#ede6d6" letter-spacing="-1">Devin Boodoo</text>
+    <text x="600" y="364" class="mono r r3" font-size="14" letter-spacing="1" fill="#9a9489">software <tspan fill="#4a4740">·</tspan> systems <tspan fill="#4a4740">·</tspan> security</text>
+  </g>
+
+  <g class="r r5">
+    <g class="hzc">
+      <ellipse cx="600" cy="470" rx="420" ry="10" fill="#ede6d6" fill-opacity=".10" filter="url(#soft)"/>
+      <rect x="250" y="469.5" width="700" height="1" fill="url(#hz)"/>
+    </g>
+  </g>
+
+  <rect width="1200" height="540" fill="url(#vig)"/>
+  <rect width="1200" height="540" filter="url(#g)" opacity=".07"/>
+</svg>
